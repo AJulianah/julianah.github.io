@@ -1,0 +1,115 @@
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+
+		#container{
+		  width: 1200px;
+		  height: 650px;
+		  background-color: LightGray;
+		  background-image: linear-gradient(LightGray, grey);
+		  margin: 10px auto;
+		  position: relative;
+		  box-shadow: 10px 10px 5px grey;
+		  }
+		  /* Responsive layout  */
+		@media (max-width: 800px) {
+		  #container {
+		    width: auto;
+		    height: auto;
+		  }
+		}	
+
+		/* Style the header */
+		.header {
+		  background-color: black;
+		  color: white;
+		  padding: 30px;
+		  font-size: 12px;
+		  width: auto;
+		  height: auto;
+		}
+		.box{
+		  float: left;
+		  width: 14%;
+		  padding: 5px;
+		  cursor: pointer;
+		}
+		.box:hover{
+		  color: lightblue;
+		  font-size: 15px;
+		}
+		#box1{
+		  font-size: 16px;
+		}
+		/* Responsive layout  */
+		@media (max-width: 800px) {
+		  .box {
+		    width: 100%;
+		  }
+		}
+		/* Responsive layout  */
+		@media (max-width: 800px) {
+		  .header {
+		    height: 300px;
+		  }
+		}
+		.row{
+		  margin: 10px auto;
+		}
+		/* Create three equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 50%;
+		  padding: 10px;
+		  height: 300px; /* Should be removed. Only for demonstration */
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		.images{
+			float: left;
+			
+			
+		}
+		/* Style the footer */
+		#footer{
+		  width: 1200px;
+		  height: 50px;
+		  border-radius: 3px;
+		  background-color: #222b22;
+		  position: absolute;
+		  bottom: 1px;
+		  box-shadow: 10px 10px 5px grey;
+		  text-align: center;
+		  color: white;
+		  font-size: 14px;
+		  
+
+		}
+		#by{
+		  margin-top: 20px;
+		}
+		/* Responsive layout  */
+		@media (max-width: 800px) {
+		  #footer {
+		    width: auto;
+		    height: auto;
+		    background-color: LightGray;
+		    display: none;
+		    
+		  }
+		}
+		/* Responsive layout  */
+		@media (max-width: 800px) {
+		  .column {
+		    width: 100%;
+		  }
+		}
